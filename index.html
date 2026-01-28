@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Portfolio</title>
+<style>
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile-img {
+    width: 200px; /* Adjust the size as needed */
+    height: 100;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+  }
+</style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    /* ===== NAVBAR ===== */
+    header {
+      background: #020617;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+      margin-top: 3rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background: #020617;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* ===== PROJECTS ===== */
+    .projects-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      background: #38bdf8;
+      color: #020617;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #020617;
+      margin-top: 3rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #020617;
+        flex-direction: column;
+        width: 200px;
+        display: none;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+  <!-- Add this inside your "About" section or wherever you'd like the image to appear -->
+  <section class="about" id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <section class="profile-picture-section">
+  <h2>About Me</h2>
+  <div class="picture-container">
+    <img src="WhatsApp Image 2026-01-27 at 1.11.23 PM.jpeg" alt="Your Name" class="profile-img" />
+  </div>
+</section>
+
+<style>
+  .profile-picture-section {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .profile-img {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  }
+</style>
+    <p>
+      I’m a passionate web developer focusing on creating responsive and user-friendly websites.
+    </p>
+  </div>
+</section>
+
+
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav">
+      <div class="logo">MyPortfolio</div>
+      <div class="menu-btn" id="menuBtn">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h3>Hi, I'm Marseille a passionate web developer based in Nigeria. I have a background in Lincoln University and I specialize in creating responsive and user-friendly websites. My journey into web development began by attending classes and I’m constantly eager to learn and grow.
+I’m proficient in HTML, CSS, and JavaScript, and I love bringing creative ideas to life. My goal is to build intuitive and impactful digital experiences that make a difference. <span>Your Name</span></h3>
+    <p>A beginner web developer learning HTML, CSS & JavaScript.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+       <h3>Hello! I’m Marseille a dedicated web developer passionate about crafting seamless digital experiences.</h3>
+<br><b>Background:</b> With a background in don't have any I’ve been working in the tech industry for just started, focusing on front-end development.
+<br><b>Skills and Motivation:</b> I specialize in HTML, CSS, and JavaScript, always striving to blend creativity with functionality. <br>My goal is to build websites that are not only visually appealing but also user-friendly.
+    </p>
+  </section>
+   <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-box">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+    </div>
+    <section class="profile-picture-section">
+  <div class="picture-container">
+    <img src="IMG122.jpeg" alt="Your Name" class="profile-img" />
+  </div>
+</section>
+
+<style>
+  .profile-picture-section {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .profile-img {
+    width: 500px; /* Adjust the size as needed */
+    height: 300px;
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  }
+</style>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-box">
+      <div class="project">Personal Portfolio</div>
+      <div class="project">Personal satifation</div>
+      <div class="project">some school work</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="07073438005">
+    <h2>mosesdangombe1@gmail</h2>
+    <p>Want to work together or talk tech?</p>
+    <button onclick="sayHello()">Say Hello</button>
+  </section>
+
+  <footer>
+    <p>© 2026 MOSES YUSUF</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    function sayHello() {
+      alert("Thanks for visiting my portfolio this my number 07073438005!");
+    }
+  </script>
+
+</body>
+</html>
